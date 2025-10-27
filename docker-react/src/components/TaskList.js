@@ -13,7 +13,7 @@ function TaskEdit({ taskId, onTaskUpdated, onBack }) {
 
   const API_URL = `http://192.168.99.100:8082/api/task/${taskId}`;
 
-  // Fetch the existing tasks data
+  // Fetch the existing data of tasks
   useEffect(() => {
     const fetchTask = async () => {
       try {
