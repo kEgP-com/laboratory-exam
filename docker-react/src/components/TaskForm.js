@@ -32,7 +32,7 @@ function TaskForm({ onTaskAdded, onBack }) {
       if (!res.ok) throw new Error("Failed to add task");
 
       await res.json();
-      // Refresh task list after successful add
+
       if (onTaskAdded) onTaskAdded();
 
       // Reset form
