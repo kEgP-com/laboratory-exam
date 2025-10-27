@@ -10,7 +10,7 @@ function TaskList() {
 
   const API_URL = "http://192.168.99.100:8082/api/task";
 
-  // Fetch all 
+  // Fetch all task
   const fetchTasks = async () => {
     setLoading(true);
     try {
@@ -25,7 +25,7 @@ function TaskList() {
     }
   };
 
-  // Delete a task
+  // Delete a 
   const deleteTask = async (id) => {
     setDeletingId(id);
     try {
