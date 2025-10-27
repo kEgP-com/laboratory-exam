@@ -39,7 +39,7 @@ function TaskList() {
     }
   };
 
-  // Mark task as completed
+  // Mark task as complet
   const markAsCompleted = async (id) => {
     setUpdatingId(id);
     try {

@@ -32,7 +32,7 @@ function TaskForm({ onTaskAdded, onBack }) {
       if (!res.ok) throw new Error("Failed to add task");
 
       await res.json();
-
+      // Refresh task list after successful add
       if (onTaskAdded) onTaskAdded();
 
       // Reset form
@@ -76,7 +76,6 @@ function TaskForm({ onTaskAdded, onBack }) {
           value={form.due_date}
           onChange={handleChange}
         />
-
         <div className="d-flex justify-content-between">
           <button type="submit" className="btn btn-primary" disabled={loading}>
             {loading ? "Adding..." : "Add Task"}
