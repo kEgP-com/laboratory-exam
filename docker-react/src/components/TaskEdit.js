@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
 import {Link } from "react-router-dom";
 
@@ -14,7 +13,7 @@ function TaskEdit({ taskId, onTaskUpdated, onBack }) {
 
   const API_URL = `http://192.168.99.100:8082/api/task/${taskId}`;
 
-  // Fetch the existing tasks data
+  // Fetch the existing task data
   useEffect(() => {
     const fetchTask = async () => {
       try {
@@ -122,5 +121,3 @@ function TaskEdit({ taskId, onTaskUpdated, onBack }) {
 }
 
 export default TaskEdit;
-=======
->>>>>>> ef5e04f1b12e2c39200a2580e4cb744aec623525
