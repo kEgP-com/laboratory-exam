@@ -10,7 +10,7 @@ function TaskList() {
 
   const API_URL = "http://192.168.99.100:8082/api/task";
 
-  // Fetch all tasks
+  // Fetch all 
   const fetchTasks = async () => {
     setLoading(true);
     try {
